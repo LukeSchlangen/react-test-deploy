@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// import route Components here
 import Hello from '../HelloComponent/HelloComponent';
 import About from '../AboutComponent/AboutComponent';
 import Books from '../BooksComponent/BooksComponent';
 
-// import route Components here
 import {
   BrowserRouter as Router,
   Route,
