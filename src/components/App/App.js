@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 // import route Components here
+import Home from '../HomeComponent/HomeComponent';
 import Hello from '../HelloComponent/HelloComponent';
 import About from '../AboutComponent/AboutComponent';
 import Books from '../BooksComponent/BooksComponent';
@@ -22,12 +23,14 @@ class App extends Component {
           <div className="container">
             <ul>
               <ul>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/hello">Hello</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/books">Books</Link></li>
               </ul>
             </ul>
             <hr />
+            <Route path="/" exact={true} component={Home} />
             <Route path="/hello" component={Hello} />
             <Route path="/about" component={About} />
             <Route path="/books" component={Books} />
